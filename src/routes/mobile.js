@@ -9,7 +9,7 @@ router.post('/resumen', (request, response) => {
 
     let array_result = []
     let obj_produ = {}
-    let valor_total = 0
+    let valor_compra = 0
     _.each(array_prod, (array_p, i) => {
         let search_prod = products.filter((element) =>{
             if(element.sku == array_prod[i]){
@@ -20,15 +20,15 @@ router.post('/resumen', (request, response) => {
                 let iva = element.iva
 
                 let precio_final_product = precio - (precio * descuento) + (precio * iva)
-                valor_total += precio_final_product
+                valor_compra += precio_final_product
 
                 obj_produ = { sku, nombre, precio_final_product }
             }
         })
         array_result.push(obj_produ)
     })
-    const showResume = { valor_total }
-    array_result.push(valor_total)
+    const showResume = { valor_compra }
+    array_result.push(showResume)
 
     response.json(array_result)
 })
