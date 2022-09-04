@@ -1,13 +1,25 @@
 [
     {
-        "sku": "1",
+        "sku": "LLL",
         "nombre": "Zapatos deportivos",
-        "precio": 250000,
+        "precio": 50000,
         "url":"/images/feet.jpg",
         "marca": "Nike",
         "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
-        "iva": 0.18,
-        "descuento": 0.20,
+        "iva": 0.15,
+        "descuento": 0.9,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-31"
+    },
+    {
+        "sku": "ZZZ",
+        "nombre": "Zapatos deportivos",
+        "precio": 100000,
+        "url":"/images/feet.jpg",
+        "marca": "Nike",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.5,
+        "descuento": 0.15,
         "inventario": 5,
         "fecha_creacion": "2022-08-31"
     }

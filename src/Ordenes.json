@@ -5,7 +5,28 @@
         "apellido": "Pimentel",
         "total": 439142,
         "productos": [
-            "6938", "9327", "2491"
+            "6938",
+            "9327",
+            "2491"
         ]
+    },
+    {
+        "id": 2,
+        "nombre": "Jairo",
+        "apellido": "Pimentel",
+        "array_compras": [
+            "LLL",
+            "ZZZ"
+        ],
+        "total": 147500
+    },
+    {
+        "id": 3,
+        "nombre": "Liderman",
+        "apellido": "Giraldo",
+        "array_compras": [
+            "LLL"
+        ],
+        "total": 12500
     }
 ]
