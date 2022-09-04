@@ -1,6 +1,42 @@
 [
     {
-        "sku": "1",
+        "sku": "ABC",
+        "nombre": "Zapatos deportivos",
+        "precio": 250000,
+        "url":"/images/feet.jpg",
+        "marca": "Nike",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.18,
+        "descuento": 0.20,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-31"
+    },
+    {
+        "sku": "AEI",
+        "nombre": "Zapatos deportivos",
+        "precio": 250000,
+        "url":"/images/feet.jpg",
+        "marca": "Nike",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.18,
+        "descuento": 0.20,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-31"
+    },
+    {
+        "sku": "XYZ",
+        "nombre": "Zapatos deportivos",
+        "precio": 250000,
+        "url":"/images/feet.jpg",
+        "marca": "Nike",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.18,
+        "descuento": 0.20,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-31"
+    },
+    {
+        "sku": "Lider",
         "nombre": "Zapatos deportivos",
         "precio": 250000,
         "url":"/images/feet.jpg",
