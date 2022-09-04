@@ -2,6 +2,7 @@ const { Router } = require('express')
 const { isString, isNumber } = require('underscore')
 const router = Router()
 const _ = require('underscore')
+const fs = require('fs')
 
 const products = require('../Productos.json')
 
@@ -48,18 +49,15 @@ router.put('/producto/:sku', (request, response) => {
     let year = date.getFullYear()
     const fecha_actual = `${year}-${month}-${day}`
 
-    _.each(products, (product, i) => {
-        if(product.sku == sku){
-            product.nombre = nombre
-            product.precio = precio
-            product.url = url
-            product.marca = marca
-            product.descripcion = descripcion
-            product.iva = iva
-            product.descuento = descuento
-            product.inventario = inventario
-            product.fecha_creacion = fecha_actual
-            
+    let position = products.findIndex((element) => element.sku == sku)
+
+    const updateProduct = {sku, ...request.body, fecha_actual}
+    products.splice(position, 1, updateProduct)
+
+    const update_process = JSON.stringify(products)
+    fs.writeFileSync('src/Productos.json', update_process, (error) => {
+        if(error){
+            console.log(`Error: ${error}`)
         }
     })
     response.json('Update Product')

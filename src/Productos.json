@@ -1,14 +1,26 @@
 [
     {
         "sku": "1",
-        "nombre": "Zapatos deportivos",
-        "precio": 250000,
-        "url":"/images/feet.jpg",
-        "marca": "Nike",
-        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
-        "iva": 0.18,
-        "descuento": 0.20,
-        "inventario": 5,
-        "fecha_creacion": "2022-08-31"
+        "nombre": "PRODUCTOOOOO!!!!1",
+        "precio": 3200000,
+        "url": "/images/feet.jpg",
+        "marca": "Apple",
+        "descripcion": "Celular",
+        "iva": 0.1,
+        "descuento": 0.5,
+        "inventario": 100,
+        "fecha_actual": "2022-09-03"
+    },
+    {
+        "sku": "2",
+        "nombre": "Producto 2",
+        "precio": 3200000,
+        "url": "/images/feet.jpg",
+        "marca": "Apple",
+        "descripcion": "Celular",
+        "iva": 0.1,
+        "descuento": 0.5,
+        "inventario": 100,
+        "fecha_actual": "2022-09-03"
     }
 ]
