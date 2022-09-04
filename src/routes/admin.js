@@ -2,10 +2,26 @@ const { Router } = require('express')
 const router = Router()
 const _ = require('underscore')
 
-const product = require('../Productos.json')
+const products = require('../Productos.json')
+
 
 router.get('/producto', (request, response) => {
-    response.json(product)
+    // response.send(product[0]["marca"])
+    let arry_result = []
+    _.each(products, (product, i) => {
+        let sku = product.sku
+        let nombre = product.nombre
+        let precio = product.precio
+        let url = product.url
+        let marca = product.marca
+        let iva = product.iva
+        let inventario = product.inventario
+
+        const showProducts = {sku, nombre, precio, url, marca, iva, inventario}
+        arry_result.push(showProducts)
+
+    })
+    response.json(arry_result)
 })
 
 module.exports = router
