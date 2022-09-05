@@ -1,26 +1,38 @@
 [
     {
-        "sku": "1",
-        "nombre": "PRODUCTOOOOO!!!!1",
-        "precio": 3200000,
-        "url": "/images/feet.jpg",
-        "marca": "Apple",
-        "descripcion": "Celular",
-        "iva": 0.1,
-        "descuento": 0.5,
-        "inventario": 100,
-        "fecha_actual": "2022-09-03"
+        "sku": "HT555",
+        "nombre": "Zapatos deportivos",
+        "precio": 250000,
+        "url": "/images/zdeportivos.jpg",
+        "marca": "Nike",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.18,
+        "descuento": 0.2,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-31"
     },
     {
-        "sku": "2",
-        "nombre": "Producto 2",
-        "precio": 3200000,
-        "url": "/images/feet.jpg",
-        "marca": "Apple",
-        "descripcion": "Celular",
-        "iva": 0.1,
-        "descuento": 0.5,
-        "inventario": 100,
-        "fecha_actual": "2022-09-03"
+        "sku": "LG135",
+        "nombre": "Camisilla",
+        "precio": 20000,
+        "url": "/images/camisilla.jpg",
+        "marca": "Gues",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.25,
+        "descuento": 0.15,
+        "inventario": 10,
+        "fecha_actual": "2022-09-05"
+    },
+    {
+        "sku": "CC999",
+        "nombre": "Botas",
+        "precio": 1500000,
+        "url": "/images/botas.jpg",
+        "marca": "Moschino",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.5,
+        "descuento": 0.1,
+        "inventario": 2,
+        "fecha_creacion": "2022-08-10"
     }
 ]

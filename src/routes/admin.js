@@ -6,10 +6,12 @@ const fs = require('fs')
 
 const products = require('../Productos.json')
 
+//Endpoint Update product
 router.put('/producto/:sku', (request, response) => {
     const { sku } = request.params
     const { nombre, precio, url, marca, descripcion, iva, descuento, inventario } = request.body
 
+    //Validar datos de entrada
     if(!nombre || !isString(nombre)){
         response.status(403)
         response.send({error: 'nombre invalido!'})
@@ -43,6 +45,7 @@ router.put('/producto/:sku', (request, response) => {
         response.send({error: 'Registro de inventario invalido!'})
     }
 
+    //Asignar fecha actual
     let date = new Date()
     let day = `${(date.getDate())}`.padStart(2,'0')
     let month = `${(date.getMonth()+1)}`.padStart(2,'0')
@@ -54,6 +57,7 @@ router.put('/producto/:sku', (request, response) => {
     const updateProduct = {sku, ...request.body, fecha_actual}
     products.splice(position, 1, updateProduct)
 
+    //Actualizar e insertar producto en Productos.json
     const update_process = JSON.stringify(products)
     fs.writeFileSync('src/Productos.json', update_process, (error) => {
         if(error){
