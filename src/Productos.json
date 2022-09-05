@@ -1,1 +1,62 @@
-[{"sku":"1","nombre":"Zapatos deportivos","precio":250000,"url":"/images/feet.jpg","marca":"Nike","descripcion":"Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia","iva":0.18,"descuento":0.2,"inventario":5,"fecha_creacion":"2022-08-31"},{"sku":"UU676","nombre":"Lider","precio":3200000,"url":"/images/feet.jpg","marca":"Apple","descripcion":"Celular","iva":0.1,"descuento":0.5,"inventario":100,"fecha_actual":"2022-09-03"},{"sku":"UU6LL76","nombre":"Lider","precio":3200000,"url":"/images/feet.jpg","marca":"Apple","descripcion":"Celular","iva":0.1,"descuento":0.5,"inventario":100,"fecha_actual":"2022-09-03"},{"sku":"UU6LL7ww6","nombre":"Lider","precio":3200000,"url":"/images/feet.jpg","marca":"Apple","descripcion":"Celular","iva":0.1,"descuento":0.5,"inventario":100,"fecha_actual":"2022-09-03"},{"sku":"UU6LL7ww6","nombre":"Lider","precio":3200000,"url":"/images/feet.jpg","marca":"Apple","descripcion":"Celular","iva":0.1,"descuento":0.5,"inventario":100,"fecha_actual":"2022-09-03"},{"sku":"1","nombre":"Lider","precio":3200000,"url":"/images/feet.jpg","marca":"Apple","descripcion":"Celular","iva":0.1,"descuento":0.5,"inventario":100,"fecha_actual":"2022-09-03"},{"sku":"LI78990","nombre":"Lider","precio":3200000,"url":"/images/feet.jpg","marca":"Apple","descripcion":"Celular","iva":0.1,"descuento":0.5,"inventario":100,"fecha_actual":"2022-09-03"}]
+[
+    {
+        "sku": "HT555",
+        "nombre": "Zapatos deportivos",
+        "precio": 250000,
+        "url": "/images/zdeportivos.jpg",
+        "marca": "Nike",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.18,
+        "descuento": 0.2,
+        "inventario": 5,
+        "fecha_creacion": "2022-08-31"
+    },
+    {
+        "sku": "LG135",
+        "nombre": "Buzo",
+        "precio": 100000,
+        "url": "/images/buzo.jpg",
+        "marca": "Calvin Klein",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.25,
+        "descuento": 0.15,
+        "inventario": 10,
+        "fecha_creacion": "2022-08-20"
+    },
+    {
+        "sku": "CC999",
+        "nombre": "Botas",
+        "precio": 1500000,
+        "url": "/images/botas.jpg",
+        "marca": "Moschino",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.5,
+        "descuento": 0.1,
+        "inventario": 2,
+        "fecha_creacion": "2022-08-10"
+    },
+    {
+        "sku": "AB123",
+        "nombre": "Camisa",
+        "precio": 80000,
+        "url": "/images/camisa.jpg",
+        "marca": "Polo",
+        "descripcion": "Zapatos deportivos especiales para tus días de ejercicios. Son cómodos y flexibles, con suela de gamo que ofrece mayor adherencia",
+        "iva": 0.25,
+        "descuento": 0.15,
+        "inventario": 10,
+        "fecha_creacion": "2022-08-20"
+    },
+    {
+        "sku": "PRUEBA123",
+        "nombre": "PRUEBA",
+        "precio": 1500000,
+        "url": "/images/botas.jpg",
+        "marca": "Moschino",
+        "descripcion": "Descripcion de prueba",
+        "iva": 0.5,
+        "descuento": 0.1,
+        "inventario": 2,
+        "fecha_actual": "2022-09-05"
+    }
+]

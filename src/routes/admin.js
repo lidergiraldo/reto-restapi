@@ -6,9 +6,11 @@ const fs = require('fs')
 
 const products = require('../Productos.json')
 
+//Endpoint Insertar producto
 router.post('/producto', (request, response) => {
     const { sku, nombre, precio, url, marca, descripcion, iva, descuento, inventario} = request.body
     
+    //Validación de datos de entrada
     if(!sku || !isString(sku)){
         response.status(403)
         response.send({error: 'sku invalido!'})
@@ -54,6 +56,7 @@ router.post('/producto', (request, response) => {
         response.send({error: 'Registro de inventario invalido!'})
     }
 
+    //Asignar fecha actual
     let date = new Date()
     let day = `${(date.getDate())}`.padStart(2,'0')
     let month = `${(date.getMonth()+1)}`.padStart(2,'0')
@@ -63,6 +66,7 @@ router.post('/producto', (request, response) => {
     const insertProductNew = { ...request.body, fecha_actual }
     products.push(insertProductNew)
 
+    //Insertar nuevo producto en Productos.json
     const product_process = JSON.stringify(products)
     fs.writeFileSync('src/Productos.json', product_process, (error) => {
         if(error){
