@@ -4,6 +4,7 @@ const _ = require('underscore')
 
 const products = require('../Productos.json')
 
+//Endpoint Consultar producto móvil
 router.get('/producto', (request, response) => {
     let array_result = []
     _.each(products, (product, i) => {
