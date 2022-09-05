@@ -4,9 +4,8 @@ const _ = require('underscore')
 
 const products = require('../Productos.json')
 
-
+//Endpoint Listar productos
 router.get('/producto', (request, response) => {
-    // response.send(product[0]["marca"])
     let arry_result = []
     _.each(products, (product, i) => {
         let sku = product.sku
