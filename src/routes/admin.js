@@ -5,6 +5,7 @@ const _ = require('underscore')
 
 const products = require('../Productos.json')
 
+//Endpoint Consultar productos
 router.get('/producto/:sku', (request, response) => {
     const { sku } = request.params
     
