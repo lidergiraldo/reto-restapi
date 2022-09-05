@@ -15,6 +15,7 @@ router.get('/ordenes', (request, response) => {
         let total = order.total
         let array_productos = order.productos
 
+
         let info_product = {}
         _.each(array_productos, (producto, i) => {
             let prod = products.filter((element) => {
@@ -25,15 +26,13 @@ router.get('/ordenes', (request, response) => {
                     let url = element.url
 
                     info_product = { sku, nombre, marca, url }
-                          
+                        
                 }
                 
-            })
-            array_productos_final.push(info_product)   
-            
+            })   
+            const showOrders = { id, nombre, apellido, total, info_product}
+            array_result.push(showOrders)
         })
-        const showOrders = { id, nombre, apellido, total, array_productos_final}
-        array_result.push(showOrders)
 
     })
     response.json(array_result)

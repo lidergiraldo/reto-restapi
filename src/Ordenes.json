@@ -5,7 +5,28 @@
         "apellido": "Pimentel",
         "total": 439142,
         "productos": [
-            "Lider"
+            "LG135",
+            "HT555"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Liderman",
+        "apellido": "Giraldo",
+        "total": 439142,
+        "productos": [
+            
+            "HT555"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Cristian",
+        "apellido": "Arango",
+        "total": 439142,
+        "productos": [
+            "AB123",
+            "LG135"
         ]
     }
 ]
