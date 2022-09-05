@@ -18,8 +18,10 @@ router.delete('/producto/:sku', (request, response) => {
                     console.log(`Error: ${error}`)
                 }
             })
-            
+
             response.json('Product successfully removed')
+        }else{
+            response.json('The product is not registered')
         }
     })
 
