@@ -4,6 +4,7 @@ const _ = require('underscore')
 
 const products = require('../Productos.json')
 
+//Endpoint Resumen de compra
 router.post('/resumen', (request, response) => {
     const { array_prod } = request.body
 
